@@ -4,76 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <div>
+   <div class="overallContainer" >
     
     <!-- Left side -->
-     <div>
-        <div><p>ODIN</p></div>
-        <div>photo from unsplash</div>
+     <div class="leftContainer">
+        <div class="logo">
+            <span>ODIN</span>
+        </div>
+        <div>
+            <p class="credit">photo by Halie West on unsplash</p></div>
      </div>
 
-     <!-- right side -->
-      <div>
+    <!-- Right form section -->
+    <div class="form-section">
 
-    <div>
-        <p>This is not a real online service! You know you need something like
-            this in your life to help you realize you deepest dreams.
-            Sign up now to get started.
-            <br>
-            You know you want to
+      <div class="intro-text">
+        <p>
+          This is not a real online service! You know you need something
+          like this in your life to help you realize your deepest dreams. <br>
+          Sign up now to get started.
         </p>
-    </div>
+        <p>You know you want to.</p>
+      </div>
 
-    <div>
-        <h2>Let's do this!</h2>
+      <form>
+        <h2>Let’s do this!</h2>
 
-        <form action="#" method="post">
-            <div>
-                <p>
-                <label for="first_name">FIRST NAME <br></label>
-                <input type="text" id="first_name" placeholder="John" name="first_name">
-                </p>
-                <p>
-                <label for="last name">LAST NAME <br></label>
-                <input type="text" id="last_name" placeholder="Doe" name="last_name">
-                </p>
-            </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="firstname">FIRST NAME</label>
+            <input type="text" id="firstname" placeholder="John" name="firstname">
+          </div>
 
-            <div>
-                <p>
-                <label for="email">EMAIL<br></label>
-                <input type="email" id="email" placeholder="example@gmail.com" name="email">
-                </p>
-                <p>
-                <label for="phone_number">PHONE NUMBER<br></label>
-                <input type="number" id="phone_number" name="phone_number">
-                </p>
-            </div>
+          <div class="form-group">
+            <label for="lastname">LAST NAME</label>
+            <input type="text" id="lastname" placeholder="Doe" name="lastname">
+          </div>
 
-            <div>
-                <p>
-                <label for="password">PASSWORD<br></label>
-                <input type="password" id="password" required>
-                </p>
-                <p>
-                <label for="confirm password">CONFIRM PASSWORD<br></label>
-                <input type="password" id="confirm password" required>
-                </p>
-            </div>
-        </form>
-    </div>
+          <div class="form-group">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com">
+          </div>
 
-    <div>
-        <button type="submit">Create Account</button>
-        <br>
+          <div class="form-group">
+            <label for="tel">PHONE NUMBER</label>
+            <input type="tel" id="tel" name="tel">
+          </div>
 
+          <div class="form-group">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmpassword">CONFIRM PASSWORD</label>
+            <input type="password" id="confirmpassword" name="confirmpassword">
+          </div>
+        </div>
+      </form>
+
+      <div class="actions">
+        <button>Create Account</button>
         <p>Already have an account? <a href="#">Log in</a></p>
-   </div>
+      </div>
 
     </div>
 
-    </div>
+  </div>
+
 </body>
 </html>

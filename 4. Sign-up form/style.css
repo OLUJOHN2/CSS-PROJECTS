@@ -2,9 +2,129 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 body{
     background-color: whitesmoke;
+}
+
+/* Left side */
+.overallContainer{
+    display: flex;
+    min-height: 100vh;
+}
+
+.leftContainer{
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    position: relative;
+}
+
+.logo{
+    background: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px 0;
+    margin-top: 150px;
+}
+
+.credit{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: whitesmoke;
+}
+
+/* Right side */
+
+.form-section{
+    width: 60%;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-text{
+    margin-bottom: 40px;
+    max-width: 650px;
+}
+
+.intro-text p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Form */
+form{
+    background: white;
+    padding: 30px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2{
+    margin-bottom: 20px;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+input{
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input:focus{
+    outline: none;
+    border-color: green;
+    box-shadow: 0 0 4px rgba(89, 109, 72, 0.5);
+}
+
+/* Actions */
+
+.actions{
+    margin-top: 30px;
+}
+
+button{
+    background: green;
+    color: whitesmoke;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.actions p{
+    margin-top: 20px;
+}
+
+.actions a{
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
 }
