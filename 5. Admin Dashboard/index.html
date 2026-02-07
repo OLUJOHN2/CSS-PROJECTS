@@ -1,135 +1,213 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
- </head>
- <body>
-    <div class="dashboard">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
 
-        <!-- sidebar -->
-         <aside class="sidebar">
-            <h2 class="logo" >Dashboard</h2>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
 
-         <nav>
-            <ul>
-                <li class="active">Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
-            </ul>
-         </nav>
-         </aside>
+<body>
+  <div class="dashboard">
 
-         <!-- Main content -->
-          <main class="main">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">
+        <i class="fa-solid fa-table-columns"></i>
+        Dashboard
+      </h2>
 
-            <!-- Top bar -->
-             <header class="topbar">
-                <input type="text" placeholder="Search...">
-                <div class="user">
-                    <span>Morgan Oakley</span>
+      <nav>
+        <ul>
+          <li class="active"><i class="fa-solid fa-house"></i> Home</li>
+          <li><i class="fa-solid fa-user"></i> Profile</li>
+          <li><i class="fa-solid fa-message"></i> Messages</li>
+          <li><i class="fa-solid fa-clock"></i> History</li>
+          <li><i class="fa-solid fa-list-check"></i> Tasks</li>
+          <li><i class="fa-solid fa-users"></i> Communities</li>
+          <li><i class="fa-solid fa-gear"></i> Settings</li>
+          <li><i class="fa-solid fa-circle-question"></i> Support</li>
+          <li><i class="fa-solid fa-shield"></i> Privacy</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+
+      <!-- Top bar -->
+      <header class="topbar">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <div class="user">
+          <i class="fa-regular fa-bell"></i>
+          <span>Morgan Oakley</span>
+        </div>
+      </header>
+
+      <!-- Greeting -->
+      <section class="greeting">
+        <div>
+          <p>Hi there,</p>
+          <h1>Morgan Oakley (@morgan)</h1>
+        </div>
+
+        <div class="actions">
+          <button><i class="fa-solid fa-plus"></i> New</button>
+          <button><i class="fa-solid fa-upload"></i> Upload</button>
+          <button><i class="fa-solid fa-share-nodes"></i> Share</button>
+        </div>
+      </section>
+
+      <!-- Content -->
+      <section class="content">
+
+        <!-- Projects -->
+        <div class="projects">
+          <h3>Your Projects</h3>
+
+          <div class="project-grid">
+
+            <div class="card">
+              <h4>Super Cool Project</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum alias molestias, ipsum aperiam repellendus neque est.</p>
+
+              <div class="card-icons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4>Less Cool Project</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum alias molestias, ipsum aperiam repellendus neque est.</p>
+
+              <div class="card-icons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4>Impossible App</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum alias molestias, ipsum aperiam repellendus neque est.</p>
+
+              <div class="card-icons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4>Easy Peasy App</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum alias molestias, ipsum aperiam repellendus neque est.</p>
+
+              <div class="card-icons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4>Ad Blocker</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum alias molestias, ipsum aperiam repellendus neque est.</p>
+
+              <div class="card-icons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <h4>Money Maker</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum alias molestias, ipsum aperiam repellendus neque est.</p>
+
+              <div class="card-icons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <aside class="right">
+
+          <div class="announcements">
+            <h3>Announcements</h3>
+            <div class="box">
+              <p><strong>Site Maintenance</strong></p>
+              <p>Some announcement text.</p>
+              <hr>
+              <p><strong>Community Share Day</strong></p>
+              <p>Some announcement text.</p>
+            </div>
+          </div>
+
+          <div class="trending">
+            <h3>Trending</h3>
+
+            <div class="box trending-list">
+              <div class="trend">
+                <i class="fa-solid fa-user-circle"></i>
+                <div>
+                  <p>@tegan</p>
+                  <small>World Peace Builder</small>
                 </div>
-             </header>
+              </div>
 
-             <!-- Greeting -->
-              <section class="greeting">
-               <div>
-                <p>Hi there,</p>
-                <h1>Morgan Oakley (@morgan)</h1>
-               </div> 
+              <div class="trend">
+                <i class="fa-solid fa-user-circle"></i>
+                <div>
+                  <p>@morgan</p>
+                  <small>Super Cool Project</small>
+                </div>
+              </div>
 
-               <div class="actions">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-               </div>
-              </section>
+              <div class="trend">
+                <i class="fa-solid fa-user-circle"></i>
+                <div>
+                  <p>@kendall</p>
+                  <small>Life Changing App</small>
+                </div>
+              </div>
 
-              <!-- Content -->
-               <section class="content">
-                <!-- Projects -->
-                 <div class="projects">
-                    <h3>Your Projects</h3>
+              <div class="trend">
+                <i class="fa-solid fa-user-circle"></i>
+                <div>
+                  <p>@alex</p>
+                  <small>No Traffic Maker</small>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                    <div class="project-grid">
-                        <div class="card">
-                            <h4>Super Cool Project</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Dolorum alias molestias, ipsum aperiam repellendus 
-                                 neque est.</p>
-                        </div>
+        </aside>
 
-                        <div class="card">
-                            <h4>Less Cool Project</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Dolorum alias molestias, ipsum aperiam repellendus 
-                                 neque est.</p>
-                        </div>
+      </section>
+    </main>
 
-                        <div class="card">
-                            <h4>Super Cool Project</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Dolorum alias molestias, ipsum aperiam repellendus 
-                                 neque est.</p>
-                        </div>
-
-                        <div class="card">
-                            <h4>Impossible App</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Dolorum alias molestias, ipsum aperiam repellendus 
-                                 neque est.</p>
-                        </div>
-
-                        <div class="card">
-                            <h4>Ad Blocker</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Dolorum alias molestias, ipsum aperiam repellendus 
-                                 neque est.</p>
-                        </div>
-
-                        <div class="card">
-                            <h4>Money Maker</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Dolorum alias molestias, ipsum aperiam repellendus 
-                                 neque est.</p>
-                        </div>
-                    </div>
-                 </div>
-
-                 <!-- Right column -->
-                  <aside class="right">
-                    <div class="announcements">
-                        <h3>announcements</h3>
-                        <div class="box">
-                            <p><strong>Site Maintenance</strong></p>
-                            <p>Some announcement text.</p>
-                            <hr>
-                             <p><strong>Community Share Day</strong></p>
-                            <p>Some announcement text.</p>
-                        </div>
-                    </div>
-
-                    <div class="trending">
-                        <h3>Trending</h3>
-                        <div class="box">
-                            <p>@tegan</p>
-                            <p>@morgan</p>
-                            <p>@kendall</p>
-                            <p>@alex</p>
-                        </div>
-                    </div>
-                  </aside>
-               </section>
-
-          </main>
-    </div>
- </body>
- </html>
+  </div>
+</body>
+</html>
